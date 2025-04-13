@@ -17,6 +17,9 @@ builder.Services.AddMcpServer(options =>
     .WithStdioServerTransport()
     .WithToolsFromAssembly(typeof(AboutTool).Assembly);
 
+// Health checks
+builder.Services.AddHealthChecks();
+
 WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,6 +30,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Hook up SSE endpoints for Model Context Protocol
 app.MapMcp();
+
+app.MapHealthChecks("/health");
+app.MapGet("/", () => "Eland MCPServer is running!");
 
 app.Run();
