@@ -2,7 +2,7 @@
 using System.Reflection;
 using ModelContextProtocol.Server;
 
-namespace MattEland.AI.MCPServer.Tools;
+namespace MattEland.AI.MCP.Tools;
 
 [McpServerToolType]
 public static class AboutTool
@@ -21,7 +21,4 @@ public static class AboutTool
 
         return version;
     }
-    
-    [McpServerTool, Description("Get the name of this tool")]
-    public static string GetToolName() => "Eland MCPServer Bubba";
 }
