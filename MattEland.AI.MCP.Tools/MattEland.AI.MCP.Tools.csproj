@@ -7,6 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="ModelContextProtocol" Version="0.1.0-preview.8" />
+    </ItemGroup>
+
+    <ItemGroup>
       <Reference Include="ModelContextProtocol">
         <HintPath>..\..\..\.nuget\packages\modelcontextprotocol\0.1.0-preview.8\lib\net9.0\ModelContextProtocol.dll</HintPath>
       </Reference>
