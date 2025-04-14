@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MattEland.AI.MCP.ServerAPI", "MattEland.AI.MCP.ServerAPI\MattEland.AI.MCP.ServerAPI.csproj", "{0FF81E1F-9F91-41EC-A60B-E1AEA73969BF}"
 EndProject
@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MattEland.AI.MCP.StdioClien
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\main_eland-mcp.yml = .github\workflows\main_eland-mcp.yml
+		.github\workflows\eland-mcp.yml = .github\workflows\eland-mcp.yml
 	EndProjectSection
 EndProject
 Global
@@ -35,5 +35,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF896F0F-28B4-4607-8CE6-8A66440666AC}
 	EndGlobalSection
 EndGlobal
