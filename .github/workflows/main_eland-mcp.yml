@@ -24,10 +24,10 @@ jobs:
           dotnet-version: '9.0'
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build MattEland.AI.MCP.ServerAPI/MattEland.AI.MCP.ServerAPI.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/MattEland.AI.MCP.ServerAPI
+        run: dotnet publish MattEland.AI.MCP.ServerAPI/MattEland.AI.MCP.ServerAPI.csproj -c Release -o ${{env.DOTNET_ROOT}}/MattEland.AI.MCP.ServerAPI
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
