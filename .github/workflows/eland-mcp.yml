@@ -43,7 +43,9 @@ jobs:
     - name: Azure Login
       uses: azure/login@v2
       with:
-        creds: ${{ secrets.eland_mcp_SPN }}
+        client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_FE446A4166B74D81AC5CCE985C14CA1E }}
+        tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_B098F7092BFD4303A4A439364F5071A4 }}
+        subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_27F76B89F73748729C5DEF2976621A44 }}
     - name: Deploy to Azure WebApp
       uses: azure/webapps-deploy@v2
       with:
