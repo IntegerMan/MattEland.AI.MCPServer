@@ -14,7 +14,7 @@ builder.Services.AddMcpServer(options =>
             Version = Assembly.GetExecutingAssembly().GetName().Version!.ToString()!
         };
     })
-    .WithStdioServerTransport()
+    //.WithStdioServerTransport()
     .WithToolsFromAssembly(typeof(AboutTool).Assembly);
 
 // Health checks
@@ -31,7 +31,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 // Hook up SSE endpoints for Model Context Protocol
-app.MapMcp();
+//app.MapMcp();
 
 app.MapHealthChecks("/health");
 app.MapGet("/", () => "Eland MCPServer is running!");
